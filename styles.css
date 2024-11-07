@@ -1,0 +1,117 @@
+:root {
+  --dark-grayish-blue: #1f2937;
+  --white: #f9faf8;
+  --dark-white: #e5e7eb;
+  --vivid-blue: #3882f6;
+
+  --font-size-sm: 18px;
+  --font-size-md: 24px;
+  --font-size-lg: 36px;
+  --font-size-x-lg: 48px;
+
+  --font-weight-bold: 900;
+
+  --dark-background-color: var(--dark-grayish-blue);
+  --main-text-color: var(--white);
+  --secondary-text-color: var(--dark-white);
+  --header-logo-text-color: var(--white);
+  --button-background-color: var(--vivid-blue);
+  --button-text-color: var(--white);
+  --information-header-text-color: var(--dark-grayish-blue);
+  --quote-section-background-color: var(--dark-white);
+  --image-container: var(--dark-white);
+  --quote-text-color: var(--dark-grayish-blue);
+  font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 16px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+  font-size: var(--font-size-sm);
+}
+
+button {
+  background-color: var(--button-background-color);
+  padding: 8px 14px;
+  border-radius: 8px;
+  border-style: none;
+  font-size: var(--font-size-sm);
+	font-weight: var(--font-weight-bold);
+  color: var(--button-text-color);
+  width: 140px;
+}
+
+.header {
+  background-color: var(--dark-background-color);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 16px 32px;
+}
+
+.header-content span {
+  font-size: var(--font-size-md);
+  color: var(--header-logo-text-color);
+  font-weight: var(--font-weight-bold);
+}
+
+.main {
+  background-color: var(--dark-background-color);
+}
+
+.main-content {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 112px 0;
+  display: flex;
+  gap: 16px;
+}
+
+.main-content-left {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.main-text {
+  color: var(--main-text-color);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-x-lg);
+  margin: 0;
+}
+
+.secondary-text {
+  color: var(--secondary-text-color);
+  font-size: var(--font-size-sm);
+  margin: 0;  
+}
+
+.image {
+  width: 950px;
+  height: 290px;
+  background-color: var(--image-container);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
