@@ -40,7 +40,7 @@ body {
 }
 
 main {
-  flex: 1;
+  flex: 1 1 auto;
 }
 
 ul {
@@ -95,18 +95,17 @@ button {
 }
 
 .main-content {
-  max-width: 50%;
   margin: 0 auto;
   padding: 112px 0;
   display: flex;
-  gap: 12px;
+  gap: 36px;
+  justify-content: center;
 }
 
 .main-content-left {
   display: flex;
-  gap: 8px;
+  gap: 16px;
   flex-direction: column;
-  width: 90%;
 }
 
 .main-text {
@@ -114,6 +113,7 @@ button {
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-x-lg);
   margin: 0;
+  white-space: pre-line;
 }
 
 .secondary-text {
@@ -121,9 +121,13 @@ button {
   font-size: var(--font-size-sm);
 }
 
+.secondary-text span {
+  white-space: pre-line;
+}
+
 .image {
-  width: 900px;
-  height: 250px;
+  width: 25vw;
+  height: 30vh;
   background-color: var(--image-container);
   display: flex;
   justify-content: center;
@@ -171,6 +175,7 @@ button {
   width: 150px;
   text-align: center;
 }
+
 .square {
   width: 150px;
   height: 150px;
@@ -187,19 +192,19 @@ button {
 }
 
 .quote-container {
-  max-width: 50%;
   margin: 64px auto;
   display: flex;
   flex-direction: column;
 }
 
-.quote-container div {
+.quote-text {
   font-style: italic;
   font-size: var(--font-size-lg);
   color: var(--dark-grayish-blue-text-color);
+  white-space: pre-line;
 }
 
-.quote-container span {
+.quote-author {
   font-size: var(--font-size-md);
   color: var(--dark-grayish-blue-text-color);
   font-weight: var(--font-weight-bold);
@@ -229,6 +234,7 @@ button {
 .callout-text {
   display: flex;
   flex-direction: column;
+  flex: 1 1 auto;
 }
 
 .callout-container button {
@@ -246,21 +252,69 @@ button {
   color: var(--white-text-color);
 }
 
-.footer {
+footer {
   display: flex;
   justify-content: center;
   background-color: var(--dark-background-color);
   padding: 32px;
-}
-
-.footer-text {
   color: var(--white-text-color);
 }
+/* 
+@media screen and (max-width: 767px) {
+  .header-content,
+  .main-content,
+  .quote-container {
+    max-width: 90%;
+    margin: 0;
+  }
+}
 
-@media screen and (max-width: 1408px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media screen and (min-width: 1024px) {
   .header-content,
   .main-content,
   .quote-container {
     max-width: 76%;
+  }
+} */
+
+@media screen and (min-width: 1400px) {
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .header-content,
+  .main-content,
+  .quote-container {
+    max-width: 76%;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1199px) {
+  .header-content,
+  .main-content,
+  .quote-container {
+    max-width: 90%;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+  .main-content-left {
+    width: 100%;
+    gap: 16px;
+  }
+
+  .image {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header-content,
+  .main-content,
+  .quote-container {
+    max-width: 90%;
   }
 }
