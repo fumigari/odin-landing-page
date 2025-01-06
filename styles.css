@@ -36,11 +36,13 @@
 }
 
 body {
+  width: 100vw;
   height: 100vh;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 main {
@@ -77,6 +79,8 @@ button {
 
 header {
   background-color: var(--dark-background-color);
+  display: flex;
+  justify-content: center;
 }
 
 header div {
@@ -160,7 +164,6 @@ main {
 }
 
 .grid-items {
-  flex: 1;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -214,6 +217,7 @@ main {
   color: var(--darker-text-color);
   font-weight: var(--font-weight-bold);
   align-self: flex-end;
+  white-space: nowrap;
 }
 
 .callout {
@@ -272,11 +276,6 @@ footer {
     margin: 1 auto;
   }
 
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
   .main-content {
     flex-direction: column;
     align-items: center;
@@ -300,6 +299,22 @@ footer {
     height: 200px;
   }
 
+  .grid {
+    display: grid;
+    grid-template-columns: 350px;
+    justify-content: center;
+  }
+
+  .square {
+    width: 350px;
+    height: 300px;
+    align-items: center;
+  }
+
+  .square img {
+    height: 300px;
+  }
+
   .quote-text {
     white-space: normal;
     font-size: var(--font-size-md);
@@ -313,11 +328,11 @@ footer {
     align-items: center;
   }
 
-  .callout-main-text{
+  .callout-main-text {
     text-align: center;
   }
 
-  footer{
+  footer {
     text-align: center;
   }
 }
@@ -326,6 +341,7 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 1031px) {
   header div {
     margin: 0;
+    width: 100%;
   }
 
   .main-content {
@@ -348,13 +364,27 @@ footer {
   }
 
   .image img {
-    height: 350px;
+    height: 400px;
   }
 
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 350px 350px;
+    column-gap: 0;
+    row-gap: 40px;
+    justify-content: center;
   }
+
+  .square {
+    height: 300px;
+    width: 300px;
+    align-items: center;
+  }
+
+  .square img {
+    height: 250px;
+  }
+
   .quote-text {
     white-space: normal;
   }
@@ -371,6 +401,6 @@ footer {
   header div {
     justify-content: space-between;
     padding: 16px 32px;
-    width: auto;
+    width: 100%;
   }
 }
