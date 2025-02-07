@@ -2,111 +2,110 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viweport" content="width=device-width, initial-value=1.0">
-	<meta name="author" content="Ari Ferreira, Fumigari">
-	<meta name="description" property="og:description" content="Landing Page from The Odin Project">
-	<meta name="title" property="og:title" content='Odin Landing Page' />
-	<meta name="image" property="og:image" content="">
-	<meta property='og:url' content='//https://ariferreira.com/odin-landing-page/' />
-
-	<title>Odin Landing Page</title>
+	<meta charset="UTF-8" />
+	<title>Fuzzy Friends</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="author" content="Ari Ferreira, Fumigari" />
+	<meta name="description" content="Fuzzy Friends' Landing Page for The Odin Project" />
+	<meta property="og:title" content="Fuzzy Friends" />
+	<meta property="og:description" content="Fuzzy Friends' Landing Page for The Odin Project" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:alt" content="" />
+	<meta property='og:url' content='https://ariferreira.com/odin-landing-page/' />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="./styles.css">
 	<script type="module" src="index.js"></script>
+	<script src="https://viewport-tester.com/delta/static/viewport-tester/js/utils/ChildFrame.js"></script>
+	<link rel="stylesheet" href="https://viewport-tester.com/delta/static/viewport-tester/css/utils/childFrame.css">
 </head>
 
 <body>
 	<header>
-		<div class="header-content">
-			<span>Fuzzy Friends</span>
-			<ul class="nav">
-				<li><a href="https://blush.design/pt/collections/aarkKHQ2eBWDgSC0A3U6/fuzzy-friends-illustrations">About</a>
-				</li>
-				<li><a href="#">Social</a></li>
-				<li><a href="#">Connect</a></li>
-			</ul>
-		</div>
+		<h1>Fuzzy Friends</h1>
+		<nav aria-label="main navigation">
+			<a href="https://blush.design/pt/collections/aarkKHQ2eBWDgSC0A3U6/fuzzy-friends-illustrations">About</a>
+			<a href="#">Social</a>
+			<a href="#">Connect</a>
+		</nav>
 	</header>
 	<main>
-		<div class="main-content">
-			<div class="main-content-left">
-				<span class="main-text">Manuela Langella's
-					Collection</span>
-				<div class="secondary-text">
-					<span>A lineup of fun animals and fluffy critters to
-						make adorable designs.</span>
-				</div>
-				<button><a target="_blank" rel="noopener noreferrer"
-						href="https://blush.design/pt/collections/aarkKHQ2eBWDgSC0A3U6/fuzzy-friends-illustrations">See
-						More</a></button>
+		<section id="intro" aria-labelledby="intro">
+			<div id="intro-heading">
+				<h2>Manuela Langella's
+					Collection</h2>
+				<p>A lineup of fun animals and fluffy critters to
+					make adorable designs.</p>
+
+				<a class="btn-link" role="button" target="_blank" rel="noopener noreferrer"
+					href="https://blush.design/pt/collections/aarkKHQ2eBWDgSC0A3U6/fuzzy-friends-illustrations">See
+					More</a>
 			</div>
-			<div class="image">
+			<div role="intro-image" aria-label="Cute animals drawings in portrait">
 				<img
 					src="https://blush-design.imgix.net/collections/aarkKHQ2eBWDgSC0A3U6/aa591b33-341b-41aa-a4a8-924bcc003c46.png?auto=compress&cs=srgb"
-					alt="">
+					alt="Bunny, koala, fox, bear, cat, elephant and giraffe">
 			</div>
-		</div>
-		<div class="information">
-			<span class="information-header">Examples</span>
+		</section>
+
+		<section id="information" aria-labelledby="information">
+			<h2 class="information-header">Examples</h2>
 			<div class="grid">
 				<div class="grid-items">
 					<div class="square">
 						<img src="https://images.blush.design/k1lVIywqJHCNL--_ANyW?w=500&auto=compress&cs=srgb" alt="">
 					</div>
-					<span>Playful Fox</span>
+					<h3>Playful Fox</h3>
 				</div>
 				<div class="grid-items">
 					<div class="square">
 						<img src="https://images.blush.design/VBAKdTpLurYj2A-ICwpU?w=500&auto=compress&cs=srgb" alt="">
 					</div>
-					<span>Elegant Giraffe</span>
+					<h3>Elegant Giraffe</h3>
 				</div>
 				<div class="grid-items">
 					<div class="square">
 						<img src="https://images.blush.design/bJpkNUR_sKLzLajbotMo?w=500&auto=compress&cs=srgb" alt="">
 					</div>
-					<span>Romantic Bear</span>
+					<h3>Romantic Bear</h3>
 				</div>
 				<div class="grid-items">
 					<div class="square">
 						<img src="https://images.blush.design/_bOCxbIMlVyOs4vR-y-A?w=500&auto=compress&cs=srgb" alt="">
 					</div>
-					<span>Sweet Koala</span>
+					<h3>Sweet Koala</h3>
 				</div>
 			</div>
-		</div>
-		<div class="quote">
-			<div class="quote-container">
-				<span class="quote-text">
+		</section>
+
+		<section id="quote" aria-labelledby="quote">
+			<div id="quote-container">
+				<p>
 					All images belongs to Manuela Langella's collection called
 					Fuzzy Friends, available at Blush Design. This is a Landing
 					Page for Odin Project's only, without commercial intention.
-				</span>
-				<span class="quote-author">- Ari </span>
+				</p>
+				<h2>- Ari </h2>
 			</div>
-		</div>
-		<div class="callout">
-			<div class="callout-container">
-				<div class="callout-text">
-					<span class="callout-main-text">Check Out! It's time!</span>
-					<span class="callout-secondary-text">
-						To know more about these cutesy designs, see Manuela Langella's profile.
-					</span>
-				</div>
-				<button><a href="https://blush.design/pt/collections/aarkKHQ2eBWDgSC0A3U6/fuzzy-friends-illustrations">See
-						More</a></button>
-			</div>
-		</div>
+		</section>
 
+		<section id="callout" aria-labelledby="callout">
+			<div id="callout-messages">
+				<h2>Check Out! It's time!</h2>
+				<p>
+					To know more about these cutesy designs, see Manuela Langella's profile.
+				</p>
+			</div>
+			<a class="btn-link" role="button" target="_blank" rel="noopener noreferrer"
+				href="https://blush.design/pt/collections/aarkKHQ2eBWDgSC0A3U6/fuzzy-friends-illustrations">See
+				More</a>
+		</section>
 	</main>
 	<footer>
 		Copyright &copy; Ari Ferreira | The Odin Project 2024
 	</footer>
-
 </body>
 
 </html>
